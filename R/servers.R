@@ -93,3 +93,12 @@ server_reboot <- function(id) {
     httr2::req_perform() |>
     httr2::resp_body_json()
 }
+
+#' @export
+#' @rdname server
+server_delete <- function(id) {
+  hetzner_req(sprintf("servers/%s", id)) |>
+    httr2::req_method("delete") |>
+    httr2::req_perform() |>
+    httr2::resp_body_json()
+}

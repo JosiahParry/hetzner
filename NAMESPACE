@@ -3,6 +3,7 @@
 export(get_server)
 export(list_server_actions)
 export(list_servers)
+export(server_delete)
 export(server_poweroff)
 export(server_poweron)
 export(server_reboot)

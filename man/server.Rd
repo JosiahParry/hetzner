@@ -5,6 +5,7 @@
 \alias{server_poweron}
 \alias{server_poweroff}
 \alias{server_reboot}
+\alias{server_delete}
 \title{Server Actions}
 \usage{
 get_server(id)
@@ -14,6 +15,8 @@ server_poweron(id)
 server_poweroff(id)
 
 server_reboot(id)
+
+server_delete(id)
 }
 \description{
 These functions perform server related actions.
