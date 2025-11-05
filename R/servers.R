@@ -13,6 +13,8 @@ hetzner_req <- function(
 }
 
 
+#' List Hetzner Servers
+#' @export
 list_servers <- function() {
   res <- hetzner_req("servers") |>
     httr2::req_perform() |>
@@ -57,6 +59,10 @@ get_server <- function(id) {
   res
 }
 
+#' List Server Actions
+#'
+#' NOTE: note paginated yet.
+#' @export
 list_server_actions <- function() {
   # TODO paginate
   hetzner_req("/servers/actions") |>
